@@ -796,15 +796,13 @@ button {
     gap: 0;
     left: 0;
     transform: translateX(0%);
-    transform: translateY(-150%);
+    transition: opacity 0.3s ease;
     opacity: 0;
-    transition: all 0.5s ease;
     margin: 50px 0;
   }
 
   .nav-list.active {
     opacity: 1;
-    transform: translateY(0%);
   }
 
   .nav-items {
@@ -813,14 +811,12 @@ button {
   }
 
   .link-nav {
-    transform: translateY(-100%);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     opacity: 0;
   }
 
   .link-nav.active {
     opacity: 1;
-    transform: translateY(0%);
   }
 
   .nav-btn span {
@@ -828,11 +824,11 @@ button {
   }
 
   .nav-btn::after {
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
   }
 
   .nav-btn::before {
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
   }
 
   .nav-btn.active span {
